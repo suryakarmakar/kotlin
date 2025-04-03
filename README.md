@@ -147,3 +147,26 @@ val lastName = readln()
 
 val a = readln().toInt()
 ```
+
+### Random Number:
+
+we can generate any random number using Random package. to use this package we have to import from kotlin.
+
+```kt
+import kotlin.random.Random
+```
+
+- nextInt()
+
+it will give random integer. we can pass custom range. if we pass a 10 as a parameter then it will generate 0 to 9.
+
+```kt
+println(Random.nextInt(10))
+```
+
+another way we can pass starting and ending position. we have to pass from: 10 to until: 30. note that 10 will be
+included but not 20. it will generate 10 to 19.
+
+```kt
+println(Random.nextInt(10, 20))
+```
