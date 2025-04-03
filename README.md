@@ -170,3 +170,84 @@ included but not 20. it will generate 10 to 19.
 ```kt
 println(Random.nextInt(10, 20))
 ```
+
+### Data Types:
+
+- Integers:
+
+```kt
+val i = 10
+println(i::class.java)
+```
+
+- Long:
+
+```kt
+val l = 700000000000000
+println(l::class.java)
+```
+
+- Double:
+
+by default all the real number in kotlin is double. to use floating data type we have to explicitly convert.
+
+```kt
+val d = 3.14
+println(d::class.java)
+```
+
+- String:
+
+```kt
+val s = "text"
+println(s::class.java)
+```
+
+- Character:
+
+```kt
+val c = 'c'
+println(c::class.java)
+```
+
+- Boolean:
+
+```kt
+val b = true
+println(b::class.java)
+```
+
+- Type declaration:
+
+```kt
+val bt: Byte = 10
+println(bt::class.java)
+
+val sh: Short = 20000
+println(sh::class.java)
+
+val it: Int = 20
+println(it::class.java)
+
+val lg: Long = 100
+println(lg::class.java)
+```
+
+### Type Conversions:
+
+A variable of a certain type can be converted into a different type, but there are some curtain rules to convert one
+type to another type.
+
+```kt
+val it2 = 10
+println(it2.toDouble())
+```
+
+If we convert to a smaller type, then some information might be lost or corrupted. so be carefully about converting
+large datatype to smaller datatype.
+
+```kt
+val pi = 3.14
+println(pi.toInt())
+```
+
