@@ -132,5 +132,18 @@ const val BASE_URL = "example.com"
 fun main() {
     println("$BASE_URL/api/v1/user")
 }
+```
 
+### User Input:
+
+- readln():
+
+reading user input form console. every thing we read as a string data type, so we have to explicitly type cast string to
+int or any other data type.
+
+```kt
+val firstName = readln()
+val lastName = readln()
+
+val a = readln().toInt()
 ```
