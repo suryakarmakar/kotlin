@@ -251,3 +251,34 @@ val pi = 3.14
 println(pi.toInt())
 ```
 
+### Nullability:
+
+if you use a variable with a null value, your program will crash with a NullPointerException(NPE). to solve this problem
+kotlin provide some methods to guards the null values. kotlin differentiates between variables that can be null and
+those that cannot, using the ? operator. using this operator we can define a nullable or non-nullable variable.
+
+- non-nullable:
+
+if a variable cant be null, then it must be given a value.
+
+```kt
+var name: String = "surya"
+```
+
+- nullable:
+
+if a variable can be null, then you can still provide a value that is an optional, but if you do not provide a value
+then you must provide value null.
+
+```kt
+var name: String? = null
+```
+
+the null keyword is used to assign the value null to a nullable value. note: we cant allow to assign null to a variable
+that is not nullable, it will give an error.
+
+```kt
+var name: String? = "surya"
+name = null
+```
+
