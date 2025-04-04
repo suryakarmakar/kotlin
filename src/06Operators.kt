@@ -31,4 +31,19 @@ fun main() {
     println(a)
     a %= 2
     println(a)
+
+    // logical operator
+    val x = true
+    val y = false
+    println(x && y) // and
+    println(x || y) // or
+    println(!x) // not
+
+    // comparison operator
+    println(10 > 5) // greater than
+    println(10 < 5) // smaller than
+    println(10 >= 5) // greater than equal to
+    println(10 <= 5) // smaller than equal to
+    println(10 == 10) // equals to
+    println(10 != 5) // not equals
 }
