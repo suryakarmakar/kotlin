@@ -282,3 +282,28 @@ var name: String? = "surya"
 name = null
 ```
 
+- null operator:
+
+null operators are basically an operators that we can use, and we have to use on null values or on variables that can be
+null. using "?" operator we can define a variable that can be null or that can have a null value.
+
+- nullable operator (null safe call):
+
+suppose we have a nullable variable, and we want to get the length of the variable. now the problem is if the variable
+is null then the .length will give you an error, because null value don't have a length. to solve this issue kotlin
+provided a nullable operator "?.". using this if the variable is not null then it will give the length otherwise it will
+return the null.
+
+```kt
+var emp4: String? = "employee4"
+println(emp4?.length)
+emp4 = null
+println(emp4?.length)
+```
+
+safe calls can be chained for multiple operator.
+
+```kt
+var emp5: String? = "employee5"
+println(emp5?.length?.toDouble())
+```
