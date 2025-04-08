@@ -319,3 +319,20 @@ we are trying to do operations with no variables. So we have other ways to perfo
 4. ?.div - division
 5. ?.rem - remainder
 
+- elvis operator():
+
+the elvis operator basically guarantees a result to be returned. it returns either the actual result for a non-null
+variable or a default value. its means if the variable is not null then it used the non-null value or if the value is
+null then it use the default value that's it. we can use elvis operator like this "?:".
+
+```kt
+val emp6: String? = null
+println(emp6 ?: "default value")
+```
+
+after using an elvis operator, there's no need for null safety checking, because the elvis operator guarantees a value.
+
+```kt
+println(emp6 ?: "default value".length)
+```
+

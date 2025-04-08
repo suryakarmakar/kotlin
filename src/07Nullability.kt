@@ -31,4 +31,10 @@ fun main() {
     println(a?.times(5)) // multiplication
     println(a?.div(5)) // division
     println(a?.rem(3)) // remainder
+
+    // elvis operator
+    val emp6: String? = null
+    println(emp6 ?: "default value")
+
+    println(emp6 ?: "default value".length)
 }
