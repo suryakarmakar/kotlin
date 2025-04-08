@@ -307,3 +307,15 @@ safe calls can be chained for multiple operator.
 var emp5: String? = "employee5"
 println(emp5?.length?.toDouble())
 ```
+
+- nullable arithmetic operation:
+
+Arithmetic operators can only work if your variables are not null. So we have a problem with arithmetic operators when
+we are trying to do operations with no variables. So we have other ways to perform those same operations.
+
+1. ?.plus() - addition
+2. ?.minus - subtraction
+3. ?.times - multiplication
+4. ?.div - division
+5. ?.rem - remainder
+

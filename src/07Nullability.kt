@@ -22,4 +22,13 @@ fun main() {
     var emp5: String? = "employee5"
     println(emp5?.length?.toDouble())
     emp5 = null
+
+    // nullable arithmetic operation
+    val a: Int? = 10
+
+    println(a?.plus(5)) // addition
+    println(a?.minus(5)) // subtraction
+    println(a?.times(5)) // multiplication
+    println(a?.div(5)) // division
+    println(a?.rem(3)) // remainder
 }
