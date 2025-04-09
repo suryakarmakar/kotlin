@@ -336,3 +336,15 @@ after using an elvis operator, there's no need for null safety checking, because
 println(emp6 ?: "default value".length)
 ```
 
+- non null assertions:
+
+"!!." this is the non-null assertions operator. This is a developer guarantee that the variable is not null. using this
+operator we can bypass all the language checks for null safety, so if we sure abut that the variable is no-null then we
+can use this operator otherwise the program will crash(NullPointerException) if the variable is null.
+
+Note: try to avoid it as much as you can. use it if you 100% sure that the value is non-null.
+
+```kt
+val emp7: String? = null
+println(emp7!!.length)
+```

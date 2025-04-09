@@ -35,6 +35,9 @@ fun main() {
     // elvis operator
     val emp6: String? = null
     println(emp6 ?: "default value")
-
     println(emp6 ?: "default value".length)
+
+    // non null assertions
+    val emp7: String? = "john"
+    println(emp7!!.length)
 }
