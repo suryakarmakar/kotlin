@@ -348,3 +348,45 @@ Note: try to avoid it as much as you can. use it if you 100% sure that the value
 val emp7: String? = null
 println(emp7!!.length)
 ```
+
+### Exceptions:
+
+An exception is basically an unexpected event in a handle. if we don't handle exception then the program will terminate
+or crash and the data will be lost. an exception might have error message and stack trace. stack trace is a log of what
+the program did before it reached this point and optionally a cause what caused this exception to happen.
+
+For example suppose we are taking a number form console and convert it string to int because readln() provide a string
+value, in this situation what if user not providing a number and enter a string, then the program get crashed(
+NumberFormatException).
+
+```kt
+val a: String = readln()
+println(a.toInt())
+```
+
+Output
+
+```
+Exception in thread "main" java.lang.NumberFormatException: For input string: "test"
+at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+at java.base/java.lang.Integer.parseInt(Integer.java:662)
+at java.base/java.lang.Integer.parseInt(Integer.java:778)
+at _08ExceptionsKt.main(08Exceptions.kt:4)
+at _08ExceptionsKt.main(08Exceptions.kt)
+```
+
+- Manage exception using try-catch block:
+
+If we know that a certain part out our code might generate an exception, then we can use this try-catch block to handle
+exception. the try block execute the code that we might think can generate an error and if it's work then it's fine. if
+it does not work, and we have an exception, then we have a catch block that catches an exception e type Exception. let
+see the general structure of try-catch block.
+
+```kt
+try {
+    // code
+} catch (e: Exception) {
+    println(e.localizedMessage) // print error message
+    e.printStackTrace() // print error track strace
+}
+```
