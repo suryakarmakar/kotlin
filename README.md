@@ -390,3 +390,32 @@ try {
     e.printStackTrace() // print error track strace
 }
 ```
+
+- finally block:
+
+finally block is executed, whether an exception occurs or not. it will execute everytime. it is used to close database
+connection, closing file after completing the task etc. Even if our exception happens, we will still execute the finally
+block, and we will be able to free up our resources.
+
+```kt
+try {
+    // code
+} catch (e: Exception) {
+    // code
+} finally {
+    // code
+}
+```
+
+- generate custom exception:
+
+you can generate your own exception whenever something happens in the program that you as a developer don't like, and
+you feel that you cannot continue with the execution. using 'throw' keyword we can raise an exception.
+
+Syntax:
+
+throw exceptionType("exception message")
+
+```kt
+throw Exception("custom exception")
+```
