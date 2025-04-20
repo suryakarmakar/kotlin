@@ -419,3 +419,20 @@ throw exceptionType("exception message")
 ```kt
 throw Exception("custom exception")
 ```
+
+### Collections:
+
+Using different types of collections we can store multiple value's into a single variable, and we can group elements
+together. a collection can have zero or more elements and most importantly, all the elements in a collection are of the
+same type.
+
+Example:
+
+number collection - [1, 2, 3, 4, 5]
+
+string collection - ["jan", "feb", "mar"]
+
+empty collection - []
+
+
+
