@@ -1,4 +1,5 @@
-## Kotlin-Programming Started 1/4/2025
+## Kotlin-Programming
+### Total Exp = 1 Apr 2025 - 30 Apr 2025 (1 Month)
 
 ```kt
 fun main() {
