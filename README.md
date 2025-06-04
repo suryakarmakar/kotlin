@@ -1,5 +1,5 @@
 ## Kotlin-Programming
-### Total Exp = 1 Apr 2025 - 30 Apr 2025 (1 Month)
+### Total Exp = 1 Apr 2025 (2 Month)
 
 ```kt
 fun main() {
